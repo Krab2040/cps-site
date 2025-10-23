@@ -192,13 +192,13 @@ main {
     }
 
     .button_chat {
-        background-image: url("./icons/chat.svg");
+        background-image: url("icons/chat.svg");
         background-repeat: no-repeat;
         background-position: 50% 50%;
     }
 
     .button_profile {
-        background-image: url("/icons/profile.svg");
+        background-image: url("icons/profile.svg");
         background-repeat: no-repeat;
         background-position: 50% 50%;
     }
