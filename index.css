@@ -70,7 +70,7 @@ main {
     background-position: 50% 50%;
 }
 
-.button_checkstatus {
+.button_checkstatus{
     background-image: url("icons/check-status.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
