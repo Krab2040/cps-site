@@ -37,7 +37,6 @@ main{
     justify-content: space-between;
     border-bottom: 1px solid #D9FFF5;
     padding: 24px 16px 18px 16px;
-    /*background-color: black;*/
 }
 
 .header-separator{
@@ -61,19 +60,19 @@ main{
     border-radius: 50%;
 }
 .button_burger{
-    background-image: url("/icons/burger.svg");
+    background-image: url("../icons/burger.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
 .button_repair{
-    background-image: url("/icons/repair.svg");
+    background-image: url("../icons/repair.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
 .button_checkstatus{
-    background-image: url("/icons/check-status.svg");
+    background-image: url("../icons/check-status.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -156,7 +155,7 @@ main{
     background: none
 }
 .section-main__arrows{
-    content: url("/icons/arrows.svg");
+    content: url("../icons/arrows.svg");
 }
 .section-main__span {
     font-family: 'TT Lakes', serif;
@@ -186,19 +185,19 @@ main{
     }
 
     .button_call{
-        background-image: url("/icons/call.svg");
+        background-image: url("../icons/call.svg");
         background-repeat: no-repeat;
         background-position: 50% 50%;
     }
 
     .button_chat{
-        background-image: url("/icons/chat.svg");
+        background-image: url("../icons/chat.svg");
         background-repeat: no-repeat;
         background-position: 50% 50%;
     }
 
     .button_profile{
-        background-image: url("/icons/profile.svg");
+        background-image: url("../icons/profile.svg");
         background-repeat: no-repeat;
         background-position: 50% 50%;
     }
