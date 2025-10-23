@@ -9,8 +9,6 @@ ul {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
@@ -18,8 +16,6 @@ li {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
@@ -75,7 +71,7 @@ main {
 }
 
 .button_checkstatus {
-    background-image: url("./icons/check-status.svg");
+    background-image: url("/icons/check-status.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -202,7 +198,7 @@ main {
     }
 
     .button_profile {
-        background-image: url("./icons/profile.svg");
+        background-image: url("/icons/profile.svg");
         background-repeat: no-repeat;
         background-position: 50% 50%;
     }
