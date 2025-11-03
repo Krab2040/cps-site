@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'TT Lakes', serif;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
 }
 
 ul {
@@ -39,16 +42,15 @@ main {
 
 .burger-menu {
     box-sizing: border-box;
-    position: fixed;
-    top: 0;
+    height: 100%;
     background-color: white;
     display: flex;
-
+    width: 100%;
+    max-width:100%;
     box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
     flex-direction: column;
     padding: 24px 24px 0;
-    min-height: 100%;
-    min-width: 100%;
+
 }
 
 .burger-menu__header {
@@ -57,11 +59,11 @@ main {
     height: 60px;
 }
 
-.burger-menu__right-side {
+.burger-menu__left-side {
     display: flex;
 }
 
-.burger-menu__right-side img {
+.burger-menu__left-side img {
     left: 80px;
     top: 18px;
     height: 54px;
@@ -145,11 +147,12 @@ main {
 
 .burger-menu__footer__language li {
     margin-right: 7px;
-    transition: 0.5s;
+
 }
 
 .burger-menu__footer__language li button {
     color: black;
+    transition: 0.5s;
 }
 
 .burger-menu__footer__language li:first-of-type button {
@@ -159,7 +162,7 @@ main {
 
 .burger-menu__footer__language li button:hover {
     transform: scale(1.1);
-    transition: 0.5s;
+
 }
 
 
