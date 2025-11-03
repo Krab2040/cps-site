@@ -59,11 +59,11 @@ main {
     height: 60px;
 }
 
-.burger-menu__right-side {
+.burger-menu__left-side {
     display: flex;
 }
 
-.burger-menu__right-side img {
+.burger-menu__left-side img {
     left: 80px;
     top: 18px;
     height: 54px;
@@ -147,11 +147,12 @@ main {
 
 .burger-menu__footer__language li {
     margin-right: 7px;
-    transition: 0.5s;
+
 }
 
 .burger-menu__footer__language li button {
     color: black;
+    transition: 0.5s;
 }
 
 .burger-menu__footer__language li:first-of-type button {
@@ -161,7 +162,7 @@ main {
 
 .burger-menu__footer__language li button:hover {
     transform: scale(1.1);
-    transition: 0.5s;
+
 }
 
 
