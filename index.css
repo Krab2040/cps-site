@@ -26,9 +26,141 @@ button {
     font-size: 100%;
 }
 
+a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+}
+
 main {
     background-color: #F8F8F8;
 }
+
+.burger-menu {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    display: flex;
+    width: 320px;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    padding: 24px 24px 0;
+    min-height: 100%;
+}
+
+.burger-menu__header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.burger-menu__right-side {
+    display: flex;
+}
+
+.burger-menu__right-side img {
+    left: 80px;
+    top: 18px;
+    height: 54px;
+    position: absolute;
+}
+
+.burger-menu__content {
+    display: block;
+}
+
+.burger-menu__content ul {
+    overflow: hidden;
+}
+
+.burger-menu__content ul li {
+    padding-top: 32px;
+}
+
+.burger-menu__content ul li a {
+    color: black;
+    transition: 0.5s;
+    vertical-align: bottom;
+}
+
+.burger-menu__content ul li a::before {
+    content: "";
+    position: absolute;
+    border-left: 8px solid #41f6d7;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 32px;
+    left: -8px;
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+
+.burger-menu__content ul li:hover a {
+    color: #7e7e82;
+}
+
+.burger-menu__content ul li:hover a::before {
+    left: -4px;
+}
+
+.burger-menu__footer {
+    margin-top:auto;
+    display: block;
+}
+
+.burger-menu__footer__contacts {
+    display: flex;
+}
+
+.burger-menu__footer__contacts li {
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.burger-menu__footer__email {
+    margin-bottom: 12px;
+}
+
+.burger-menu__footer__email a {
+    color: black;
+}
+
+.burger-menu__footer__number {
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.burger-menu__footer__number a {
+    color: black;
+}
+
+.burger-menu__footer__language {
+    margin-bottom: 32px;
+    display: flex;
+}
+
+.burger-menu__footer__language li {
+    margin-right: 7px;
+    transition: 0.5s;
+}
+
+.burger-menu__footer__language li button {
+    color: black;
+}
+
+.burger-menu__footer__language li:first-of-type button {
+    color: #7e7e82;
+    transform: scale(1.1);
+}
+
+.burger-menu__footer__language li button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
 
 .header {
     display: flex;
@@ -58,20 +190,51 @@ main {
     border-radius: 50%;
 }
 
-.button_burger {
+.button--burger {
     background-image: url("icons/burger.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
-.button_repair {
+.button--repair {
     background-image: url("icons/repair.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
-.button_checkstatus{
+.button--checkstatus{
     background-image: url("icons/check-status.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.button--call {
+    background-image: url("icons/call.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.button--chat {
+    background-image: url("icons/chat.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.button--profile {
+    background-image: url("icons/profile.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+.button--close{
+    background-image: url("icons/close.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.button--search{
+    background-image: url("icons/search.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -171,36 +334,18 @@ main {
 
 .title-buttons-container,
 .button-tablet,
-.header-separator_logo {
+.header-separator--logo {
     display: none;
 }
 
 @media screen and (min-width: 768px) {
 
-    .header-separator_logo {
+    .header-separator--logo {
         display: flex;
     }
 
     .button-tablet {
         display: inline;
-    }
-
-    .button_call {
-        background-image: url("icons/call.svg");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-    }
-
-    .button_chat {
-        background-image: url("icons/chat.svg");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-    }
-
-    .button_profile {
-        background-image: url("icons/profile.svg");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
     }
 
     .title-main {
@@ -288,7 +433,7 @@ main {
         margin-right: 32px;
     }
 
-    .title-button_text {
+    .title-button--text {
         padding-right: 8px;
     }
 
