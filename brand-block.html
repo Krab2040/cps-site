@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="stylesheet" href="test.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="stylesheet/stylesheet.css" >
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
@@ -9,50 +10,54 @@
     <title>brand-block</title>
 </head>
 <body>
-    <article class="brand-block">
-        <h2 class = "brand-block__title">Ремонт техники различных брендов</h2>
-        <div class="brand-block__content swiper">
-            <ul class="brands swiper-wrapper">
-                <li class="brands-item swiper-slide">
-                    <img src="icons/lenovo.svg " alt="логотип lenovo">
-                    <button class="brands-item__button"> </button>
-                </li>
-                <li class="brands-item swiper-slide">
-                    <img src="icons/samsung.svg " alt="логотип samsung">
-                    <button class="brands-item__button"> </button>
-                </li>
-                <li class="brands-item swiper-slide">
-                    <img src="icons/apple.svg " alt="логотип apple">
-                    <button class="brands-item__button"> </button>
-                </li>
-                <li class="brands-item swiper-slide">
-                    <img src="icons/viewsonic.svg " alt="логотип viewsonic">
-                    <button class="brands-item__button"> </button>
-                </li>
-                <li class="brands-item swiper-slide">
-                    <img src="icons/bosch.svg " alt="логотип bosch">
-                    <button class="brands-item__button"> </button>
-                </li>
-                <li class="brands-item swiper-slide">
-                    <img src="icons/hp.svg " alt="логотип hp">
-                    <button class="brands-item__button"> </button>
-                </li>
-                <li class="brands-item swiper-slide">
-                    <img src="icons/acer.svg " alt="логотип acer">
-                    <button class="brands-item__button"> </button>
-                </li>
-                <li class="brands-item swiper-slide">
-                    <img src="icons/sony.svg " alt="логотип sony">
-                    <button class="brands-item__button"> </button>
-                </li>
-                <li class="brands-item swiper-slide">
-                    <img src="icons/lenovo.svg "alt="логотип lenovo">
-                    <button class="brands-item__button"> </button>
-                </li>
-            </ul>
-            <div class="swiper-pagination"></div>
-            </div>
-            <button class="brand-block__button">Показать все</button>
-    </article>
+<article class="brand-block">
+    <h2 class="brand-block__title">Ремонт техники различных брендов</h2>
+    <div class="brand-block__content swiper">
+        <ul class="brands swiper-wrapper">
+            <li class="brands__item swiper-slide">
+                <img src="icons/lenovo.svg" alt="lenovo" />
+                <button class="brands__item__button button--transparent" ></button>
+            </li>
+            <li class="brands__item swiper-slide">
+                <img src="icons/samsung.svg" alt="samsung" />
+                <button class="brands__item__button button--transparent" ></button>
+            </li>
+            <li class="brands__item swiper-slide">
+                <img src="icons/apple.svg" alt="apple" />
+                <button class="brands__item__button button--transparent"></button>
+            </li>
+            <li class="brands__item swiper-slide">
+                <img src="icons/viewsonic.svg" alt="viewsonic" />
+                <button class="brands__item__button button--transparent"></button>
+            </li>
+            <li class="brands__item swiper-slide">
+                <img src="icons/bosch.svg" alt="bosch" />
+                <button class="brands__item__button button--transparent"></button>
+            </li>
+            <li class="brands__item swiper-slide">
+                <img src="icons/hp.svg" alt="hp" />
+                <button class="brands__item__button button--transparent"></button>
+            </li>
+            <li class="brands__item swiper-slide">
+                <img src="icons/acer.svg" alt="acer" />
+                <button class="brands__item__button button--transparent"></button>
+            </li>
+            <li class="brands__item swiper-slide">
+                <img src="icons/sony.svg" alt="sony" />
+                <button class="brands__item__button button--transparent"></button>
+            </li>
+            <li class="brands__item swiper-slide">
+                <img src="icons/lenovo.svg" alt="lenovo" />
+                <button class="brands__item__button button--transparent"></button>
+            </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+    </div>
+    <button class="brand-block__button" id="brands_button" type="button" aria-label="Показать все">
+        <div class="arrows"></div>
+        <span>Показать все</span>
+    </button>
+</article>
+<script src="index.js"></script>
 </body>
 </html>
