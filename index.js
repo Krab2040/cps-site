@@ -1,4 +1,4 @@
-new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -11,14 +11,27 @@ new Swiper('.swiper', {
     slidesOffsetAfter: 16,
 
 
-    breakpoints: {
-        320:  { slidesPerView: 'auto' },
-        640:  { slidesPerView: 'auto' },
-        720:  { slidesPerView: 'auto' },
-        768:  { destroy() {
-            }},
-        1280: { slidesPerView: 'auto' },
-    }
 
 
+});
+
+window.addEventListener("resize", event => {
+    if (window.innerWidth >= 768)
+        swiper.destroy(true, true)
+})
+
+window.addEventListener("load", event => {
+    if (window.innerWidth >= 768)
+        swiper.destroy(true, true)
+})
+
+let brands_container = document.querySelector(".brands");
+let brands_button = document.querySelector("#brands_button");
+let brands_arrow = brands_button.querySelector(".arrows");
+let brands_text = brands_button.querySelector("span");
+let brands_degs = 0;
+brands_button.addEventListener("click", () => {
+    brands_container.classList.toggle("opened");
+    brands_text.textContent = brands_container.classList.contains("opened") ? "Скрыть" : "Показать все";
+    brands_arrow.style.transform = `rotate(${(brands_degs += 180)}deg)`;
 });

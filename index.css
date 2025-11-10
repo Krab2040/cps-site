@@ -8,14 +8,14 @@ body {
 }
 
 
-button {
+button{
     background: none;
     border: none;
     padding: 0;
     font-size: 100%;
 }
 
-a{
+a, h2{
     text-decoration: none;
     padding: 0;
     margin: 0;
@@ -292,7 +292,7 @@ main {
     white-space: nowrap;
 }
 
-.site-nav:after {
+.site-nav::after {
     content: '';
     position: fixed;
     width: 24px;
@@ -343,7 +343,7 @@ main {
     background: none
 }
 
-.section-main__arrows {
+.arrows {
     content: url("./icons/arrows.svg");
 }
 
@@ -356,10 +356,6 @@ main {
 
 .section-main__image {
     width: 100%;
-}
-
-.brand-block {
-    margin-top: 16px;
 }
 
 .brand-block__title {
@@ -375,6 +371,21 @@ main {
     margin-left: 24px;
 }
 
+.brand-block::after {
+    content: '';
+    position: fixed;
+    width: 24px;
+    height: 90px;
+    background: linear-gradient(to left, rgba(248, 248, 248, 1), rgba(248, 248, 248, 0));
+    right: 0;
+    top: 100px;
+    z-index: 11;
+}
+@media screen and (min-width: 388px){
+    .brand-block::after {
+        top: 75px;
+    }
+}
 
 .brand-block__button {
     margin-top: 16px;
@@ -386,9 +397,17 @@ main {
     color: #7e7e82;
 }
 
+.brand-block__button--text{
+    padding-left: 9px;
+}
+
 .brands {
     transition: 0.5s;
 }
+
+.brands.opened {
+    max-height: 100%; }
+
 
 .brands__item {
     display: flex;
@@ -398,8 +417,7 @@ main {
     padding: 0 16px;
     border: 1px solid #eaeaea;
     border-radius: 6px;
-
-    width: 208px;
+    width: 200px;
 }
 
 .brands__item__button {
@@ -439,6 +457,36 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+    .brand-block::after {
+        display: none;
+    }
+
+    .brand-block__content {
+        margin: 16px !important;
+    }
+
+    .brand-block__button{
+        margin-top: 24px;
+        margin-left: 16px;
+        display: flex;
+    }
+
+    .brands{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: flex-start;
+        max-width: 100%;
+        max-height: 200px;
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+
+    .brands__item{
+        margin-top: 16px;
+    }
 
     .header-separator--logo {
         display: flex;
