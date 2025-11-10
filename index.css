@@ -7,20 +7,6 @@ body {
     width: 100%;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-}
-
-li {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-}
 
 button {
     background: none;
@@ -71,7 +57,7 @@ main {
 }
 
 .burger-menu__content {
-    display: block;
+    display: flex;
 }
 
 .burger-menu__content ul {
@@ -194,6 +180,41 @@ main {
     border: none;
     border-radius: 50%;
 }
+
+.button--transparent {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 2px solid #ff3e79;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.button--transparent:hover {
+    transform: scale(1.2);
+    background-color: #ff3e79;
+}
+
+.button--transparent:hover::before {
+    content: "";
+    display: block;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.button--transparent::before {
+    content: "";
+    display: block;
+    margin: 12px 0 12px 10px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(-45deg);
+    border-right: 2px solid #ff3e79;
+    border-bottom: 2px solid #ff3e79;
+    border-bottom-right-radius: 2px;
+}
+
 
 .button--burger {
     background-image: url("icons/burger.svg");
@@ -336,6 +357,80 @@ main {
 .section-main__image {
     width: 100%;
 }
+
+.brand-block {
+    margin-top: 16px;
+}
+
+.brand-block__title {
+    background-image: linear-gradient(to right, #f8f8f8 0%, #ffffff 98.61%);
+    font-size: 20px;
+    font-weight: 300;
+    color: #7e7e82;
+    padding: 16px 24px;
+}
+
+.brand-block__content {
+    margin-top: 16px;
+    margin-left: 24px;
+}
+
+
+.brand-block__button {
+    margin-top: 16px;
+    display: none;
+    transition: 0.5s;
+}
+
+.brand-block__button:hover {
+    color: #7e7e82;
+}
+
+.brands {
+    transition: 0.5s;
+}
+
+.brands__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 86px;
+    padding: 0 16px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+
+    width: 208px;
+}
+
+.brands__item__button {
+    margin: 16px;
+}
+
+.swiper .swiper-slide {
+    width: auto;
+    box-sizing: border-box;
+}
+
+.swiper .swiper-wrapper {
+    list-style: none;
+    margin: 0 0 48px;
+    padding: 0;
+}
+
+.swiper .swiper-wrapper:after{
+
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #DDDDDD;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
 
 .title-buttons-container,
 .button-tablet,
